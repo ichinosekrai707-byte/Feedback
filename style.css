@@ -1,0 +1,245 @@
+/* ====================================================================
+/* FILE: style.css
+/* ==================================================================== */
+
+/* GLOBAL ARCHITECTURE RESET AND BOX DEFINITIONS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 20px;
+}
+
+/* CONTAINER CONSTRAINT RULES */
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* SYSTEM HEADER STYLING LAYOUTS */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e4e6eb;
+}
+
+header h1 {
+    color: #1a73e8;
+    font-size: 1.8rem;
+}
+
+.auth-status p {
+    font-size: 0.95rem;
+}
+
+/* AUTHENTICATION ROUTING UI TRIGGERS */
+.login-btn {
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #155cb4;
+}
+
+.logout-link {
+    color: #d93025;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+/* SYSTEM CARD HOUSING WRAPPERS */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    color: #202124;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.subtitle {
+    color: #5f6368;
+    font-size: 0.9rem;
+}
+
+/* CAPTURE FORM FIELD STRUCTURAL SCHEMAS */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #3c4043;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+/* READ-ONLY LOCK FOR VERIFIED SYSTEM PROFILES */
+input[readonly] {
+    background-color: #e8f0fe;
+    border-color: #aecbfa;
+    color: #185abc;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+
+/* BUTTON ELEMENT ACTIONS INTERFACES */
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* PHP SESSION RUNTIME STATUS ALERT BANNERS */
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.success {
+    background-color: #e6f4ea;
+    color: #137333;
+    border: 1px solid #ceead6;
+}
+
+.warning {
+    background-color: #fef7e0;
+    color: #b06000;
+    border: 1px solid #feebb6;
+}
+
+.error {
+    background-color: #fce8e6;
+    color: #c5221f;
+    border: 1px solid #fad2cf;
+}
+
+/* DYNAMIC FEEDBACK FEED WALL VISUAL CARDS */
+.feedback-wall h2 {
+    color: #202124;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.feedback-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    border-left: 5px solid #bdc1c6;
+}
+
+/* VISUAL DIFFERENTIATION FOR VERIFIED ENTRIES */
+.feedback-card.verified-user {
+    border-left-color: #1a73e8;
+    background-color: #f8faff;
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+}
+
+.user-badge {
+    font-weight: 600;
+    color: #3c4043;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.badge {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.feedback-time {
+    color: #80868b;
+}
+
+.feedback-text {
+    font-size: 1rem;
+    color: #202124;
+    white-space: pre-line;
+}
+
+.no-data {
+    text-align: center;
+    color: #80868b;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    font-style: italic;
+}
+    
